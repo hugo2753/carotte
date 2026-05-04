@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cartographie d’expériences, structures et outils déjà existants pouvant éclairer le projet CARotte et la coopérative intégrale.">
+  <title>CARotte — Le déjà-là</title>
+
+  <!--
+    Le style spécifique du Déjà-là n'est plus dans ce fichier.
+    Toute l'apparence est maintenant regroupée dans style.css.
+  -->
+  <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="favicon.png" type="image/png">
+ <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body>
+
+  <!-- ======================================================
+       BARRE DU HAUT
+       ------------------------------------------------------
+       Navigation commune à tout le site.
+       ====================================================== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-brand" href="index.html">
+        <img src="logo-carotte.png" class="topbar-logo" alt="Logo CARotte">
+        <span>CARotte</span>
+      </a>
+
+      <nav class="topbar-nav">
+        <a href="index.html">Accueil</a>
+        <a href="ressources.html">Ressources</a>
+        <a class="active" href="deja-la.html">Le déjà-là</a>
+        <a href="#contact-footer">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="deja-page">
+
+    <!-- ==================================================
+         INTRODUCTION
+         ================================================== -->
+    <section class="deja-hero">
+      <span class="deja-kicker">Annexe</span>
+      <h1>Le déjà-là</h1>
+      <p>Cette page ne recense pas des modèles à copier tels quels, mais des structures, expériences et outils qui mettent déjà en œuvre certaines dimensions proches de ce que le projet cherche à construire. Son rôle n’est pas de tout confondre, mais de repérer des fragments, des points d’appui, des limites et des pistes de réflexion.</p>
+      <p>Elle doit aider à voir qu’on ne part pas de rien : il existe déjà des réseaux de ravitaillement, des outils fonciers, des tentatives de propriété commune, des structures d’accès à la terre et d’autres expériences qui peuvent éclairer certaines dimensions de la coopérative intégrale, sans s’y réduire entièrement.</p>
+    </section>
+
+    <!-- ==================================================
+         BLOCS EXPLICATIFS
+         ================================================== -->
+    <section class="deja-row">
+      <article class="deja-note">
+        <h2>Comment lire cette page</h2>
+        <p>Chaque carte répond à la même logique : ce que la structure met en œuvre, en quoi elle est proche de la coopérative intégrale (CI), ce qui la distingue, et ce qu’elle permet de penser stratégiquement. Le but n’est pas de produire une galerie militante, mais une cartographie raisonnée.</p>
+      </article>
+
+      <article class="deja-note">
+        <h2>Fonction de l’annexe</h2>
+        <p>La page principale expose une logique générale. <em>Le déjà-là</em> sert à montrer des réalités existantes : outils, réseaux, lieux, montages fonciers, expériences partielles. Elle complète le site sans remplacer son argumentation centrale.</p>
+      </article>
+    </section>
+
+    <!-- ==================================================
+         RECHERCHE ET TAGS
+         --------------------------------------------------
+         Les tags et les résultats sont générés par deja-la.js
+         ================================================== -->
+    <section class="resources-tools deja-tools">
+      <article class="resources-box">
+        <h2>Recherche rapide</h2>
+        <input class="search-input" type="search" id="dejaSearchInput" placeholder="Chercher un nom, un lieu, une période, un type, un thème...">
+      </article>
+
+      <article class="resources-box">
+        <h2>Tags</h2>
+        <div class="resources-tags" id="dejaTags"></div>
+      </article>
+    </section>
+
+    <!-- ==================================================
+         SECTION : FRANCE AUJOURD'HUI
+         ================================================== -->
+    <section class="deja-section deja-section--major" id="france-aujourdhui">
+      <h2>France aujourd’hui</h2>
+      <p class="deja-small">Premiers repères dans le contexte le plus proche : ravitaillement, accès à la terre, propriété commune de lieux.</p>
+      <div class="deja-grid" id="dejaFranceGrid"></div>
+    </section>
+
+    <!-- ==================================================
+         SECTION : INTERNATIONAL
+         ================================================== -->
+    <section class="deja-section deja-section--soft" id="international">
+      <h2>International</h2>
+      <p class="deja-small">Quelques repères internationaux utiles pour penser l’autonomie, la mise en réseau intégrale, le contre-pouvoir et la durée d’expériences politiques non capitalistes, sans les transformer en modèles à copier tels quels.</p>
+      <div class="deja-grid" id="dejaInternationalGrid"></div>
+    </section>
+
+    <!-- ==================================================
+         SECTION : REPÈRES HISTORIQUES
+         ================================================== -->
+    <section class="deja-section deja-section--soft" id="reperes-historiques">
+      <h2>Repères historiques</h2>
+      <p class="deja-small">Quelques précédents utiles pour penser la socialisation, les caisses, la mutualisation et la mise à distance partielle du marché, sans confondre ces expériences avec le projet présenté sur le site.</p>
+      <div class="deja-grid" id="dejaHistoriqueGrid"></div>
+    </section>
+
+    <!-- ==================================================
+         CONTACT
+         ================================================== -->
+    <footer class="site-footer" id="contact-footer">
+      <h2>Contact</h2>
+      <p>Pour proposer une structure, signaler un lien cassé ou suggérer une correction :</p>
+      <p><a href="mailto:carottedelaci@proton.me">carottedelaci@proton.me</a></p>
+    </footer>
+  </main>
+
+  <script src="deja-la.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ressources pour approfondir les enjeux théoriques, stratégiques et pratiques liés au projet CARotte.">
+  <title>CARotte — Ressources</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body>
+
+  <!-- Barre du haut : même structure que la page principale -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-brand" href="index.html">
+        <img src="logo-carotte.png" class="topbar-logo" alt="Logo CARotte">
+        <span>CARotte</span>
+      </a>
+
+      <nav class="topbar-nav">
+        <a href="index.html">Accueil</a>
+        <a class="active" href="ressources.html">Ressources</a>
+        <a href="deja-la.html">Le déjà-là</a>
+        <a href="#contact-footer">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="resources-page">
+
+    <!-- Introduction de la page -->
+    <section class="resources-hero">
+      <span class="resources-kicker">Annexe</span>
+      <h1>Ressources</h1>
+      <p>Cette page rassemble des ressources pour approfondir certains thèmes liés au projet CARotte : coopérative intégrale, autonomie matérielle, agriculture, autogestion, communs, foncier, stratégie révolutionnaire et formes de solidarité organisée.</p>
+      <p>Elle n’a pas vocation à devenir une bibliographie exhaustive. Elle propose plutôt des points d’entrée utiles, classés par thèmes, que l’on peut explorer avec la recherche ou les tags.</p>
+      <p>La page pourra être enrichie progressivement. Pour proposer une ressource, signaler un lien cassé ou suggérer une correction, vous pouvez écrire à l’adresse de contact en bas de page.</p>
+    </section>
+
+    <!-- Barre de recherche et tags -->
+    <section class="resources-tools">
+      <article class="resources-box">
+        <h2>Recherche rapide</h2>
+        <input class="search-input" type="search" id="searchInput" placeholder="Chercher un titre, un thème, une source, un tag...">
+      </article>
+
+      <article class="resources-box">
+        <h2>Tags</h2>
+        <!-- Les boutons de tags seront générés automatiquement par ressources.js -->
+        <div class="resources-tags" id="resourcesTags"></div>
+      </article>
+    </section>
+
+    <!-- Grille principale des ressources -->
+    <section class="resources-section">
+      <h2>Ressources disponibles</h2>
+      <p>Cette sélection rassemble des ressources utiles pour comprendre, discuter ou prolonger le projet. Elle n’a pas vocation à être exhaustive et pourra être complétée progressivement.</p>
+
+      <!-- La grille est remplie par ressources.js -->
+      <div class="resources-grid" id="resourcesGrid"></div>
+    </section>
+
+    <!-- Prolongements et critiques : contenu rempli par ressources.js -->
+    <section class="explore-section related-section" id="prolongements-critiques">
+      <h2>Prolongements et critiques</h2>
+      <p>Cette zone affiche les ressources liées à une carte consultée, ainsi que des rapprochements automatiques par tags.</p>
+
+      <div class="related-content" id="relatedContent">
+        <p class="related-empty">Cliquez sur <strong>Voir les ressources liées</strong> dans une carte pour afficher ses prolongements, critiques et ressources proches.</p>
+      </div>
+    </section>
+
+    <!-- Contact simple en bas de page -->
+    <footer class="resources-footer" id="contact-footer">
+      <h2>Contact</h2>
+      <p>Pour proposer une ressource, signaler un lien cassé ou suggérer une correction :</p>
+      <p><a href="mailto:carottedelaci@proton.me">carottedelaci@proton.me</a></p>
+    </footer>
+
+  </main>
+
+  <!-- Le comportement de la page est déplacé dans un fichier séparé -->
+  <script src="ressources.js"></script>
+</body>
+</html>
