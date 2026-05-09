@@ -865,11 +865,47 @@ code {
   }
 }
 
-@media (max-width: 1450px) {
+/* =========================================================
+   Sidebar — comportement adaptatif propre
+   ========================================================= */
+
+/* Écrans moyens : on compacte la sidebar */
+@media (max-width: 1300px) {
+  .site-nav {
+    width: 220px;
+    transform: translateX(calc(220px - var(--nav-handle)));
+  }
+}
+
+/* Écrans plus petits : on la passe en haut */
+@media (max-width: 1100px) {
+  .site-nav {
+    position: static;
+    width: auto;
+    max-height: none;
+    transform: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .site-nav__handle {
+    display: none;
+  }
+
+  .site-nav__panel {
+    border-radius: var(--radius-md);
+    border-right: 1px solid rgba(47, 107, 59, 0.15);
+    box-shadow: 0 10px 28px var(--shadow);
+  }
+}
+
+/* Mobile : on masque vraiment */
+@media (max-width: 700px) {
   .site-nav {
     display: none;
   }
 }
+
+
 
 
 /* =========================================================
