@@ -27,8 +27,10 @@
   </header>
 
   <!-- Sommaire latéral -->
-  <nav class="site-nav site-nav--intro-open" id="siteNav">
+<nav class="site-nav site-nav--intro-open is-collapsed" id="siteNav">
+
     <div class="site-nav__handle"></div>
+<button class="site-nav__toggle">☰ Sommaire</button>
 
     <div class="site-nav__panel">
       <h2>Navigation</h2>
@@ -669,6 +671,16 @@
       siteNavPanel?.addEventListener("scroll", closeIntroNav, { once: true });
     }
   </script>
+<script>
+  const toggleBtn = document.querySelector(".site-nav__toggle");
+  const nav = document.getElementById("siteNav");
+
+  if (toggleBtn && nav) {
+    toggleBtn.addEventListener("click", () => {
+      nav.classList.toggle("is-collapsed");
+    });
+  }
+</script>
 
 </body>
 </html>
